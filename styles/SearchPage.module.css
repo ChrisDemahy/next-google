@@ -20,14 +20,21 @@
   margin: 0;
 }
 .desktopContainer {
-  padding: 9.5em 4em 1em 10em;
+  padding: 10em 4em 1em 10em;
+  max-width: 40em;
+  display: grid;
+  grid-gap: 1.5em;
+}
+
+.tabletContainer {
+  padding: 10em 2em 1em 2em;
   max-width: 40em;
   display: grid;
   grid-gap: 1.5em;
 }
 
 .mobileContainer {
-  padding: 9.5em 2em 1em 2em;
+  padding: 10em 2em 1em 2em;
   max-width: 40em;
   display: grid;
   grid-gap: 1.5em;

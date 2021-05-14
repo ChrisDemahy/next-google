@@ -8,11 +8,12 @@ import styles from "../styles/Header.module.css";
 import HeaderOptions from "./HeaderOptions";
 
 interface Props {
+  isMobile: boolean;
   isTablet: boolean;
   term: string;
 }
 
-const Header: React.FC<Props> = ({ isTablet, term }) => {
+const Header: React.FC<Props> = ({ isMobile, isTablet, term }) => {
   const inputRef = React.useRef<HTMLInputElement>(null);
   const router = useRouter();
 
@@ -25,9 +26,10 @@ const Header: React.FC<Props> = ({ isTablet, term }) => {
           if (!term) return;
           router.push(`/search?q=${term}`);
         }}
-        className={styles.headerForm}
+        className={isMobile ? styles.mobileHeaderForm : styles.headerForm}
       >
         <div className={styles.logo}>
+          {isMobile ? <div data-cy="spacer" /> : ""}
           <Image
             src="/Google_logo.svg"
             width="100"
@@ -35,6 +37,7 @@ const Header: React.FC<Props> = ({ isTablet, term }) => {
             layout="intrinsic"
             onClick={() => router.push("/")}
           />
+          {isMobile ? <div /> : ""}
         </div>
         <div className={styles.searchContainer}>
           {console.log(term)}

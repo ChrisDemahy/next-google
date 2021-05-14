@@ -4,7 +4,7 @@
   margin-left: 10em;
   max-width: 41em;
 }
-.mobileHeaderOptions {
+.tabletHeaderOptions {
   display: grid;
   grid-template-columns: max-content auto max-content;
   margin: 0 2em 0 2em;

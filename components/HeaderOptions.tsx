@@ -21,7 +21,7 @@ interface Props {
 const HeaderOptions: React.FC<Props> = ({ isTablet }) => {
   return (
     <div
-      className={isTablet ? styles.mobileHeaderOptions : styles.headerOptions}
+      className={isTablet ? styles.tabletHeaderOptions : styles.headerOptions}
     >
       <div className={styles.searchContexts}>
         <div className={styles.primary}>
