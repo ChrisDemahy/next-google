@@ -1,0 +1,41 @@
+.headerOptions {
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  margin-left: 10em;
+  max-width: 41em;
+}
+.mobileHeaderOptions {
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  margin: 0 2em 0 2em;
+}
+
+.searchContexts {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 2em;
+  padding: 0 0.5em 0 0.5em;
+}
+.searchContexts div {
+  padding: 0 0 0.5em 0;
+  cursor: pointer;
+}
+
+.searchSettings {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1em;
+  margin: 0 2em 0 2em;
+}
+
+.contextIcon {
+  margin-right: 5px;
+}
+
+.primary {
+  border-bottom: 3px solid #4285f4;
+}
+
+.primary {
+  color: #4285f4;
+}
