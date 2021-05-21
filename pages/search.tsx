@@ -33,7 +33,7 @@ const Search: React.FC<Props> = ({ data, term }) => {
   // Mobile Media Query
   const [isMobileState, setIsMobileState] = React.useState(false);
   const isMobile = useMediaQuery({
-    type: "handheld",
+    query: "(max-width: 30em)",
   });
 
   React.useEffect(() => {
